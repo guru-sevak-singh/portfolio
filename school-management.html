@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System - Project Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            color: #ffdd57;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #bbb;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffdd57;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #ffdd57;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        .features ul {
+            margin-left: 1.2rem;
+        }
+
+        .features li {
+            margin-bottom: 0.6rem;
+            color: #ddd;
+        }
+
+        .screenshot-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .screenshot-card h3 {
+            color: #ffdd57;
+            margin-bottom: 1rem;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #222;
+            object-fit: cover;
+        }
+
+        .screenshot-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background: #ffdd57;
+            color: #111;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #111;
+            color: #777;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <p>Digital Platform for Managing Students, Teachers, and School Operations</p>
+    </header>
+
+    <section>
+        <!-- Overview -->
+
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                The <strong>School Management System</strong> is an all-in-one web application designed to simplify
+                academic and administrative workflows for schools.
+                It enables teachers, staff, and administrators to manage students' records, track attendance, record
+                marks, and store important documents.
+                With dedicated dashboards and real-time reporting, it improves transparency, saves time, and reduces
+                paperwork.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="card features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>✅ <strong>Student Profiles</strong> – each student has a digital profile with personal data,
+                    attendance, marks, and documents.</li>
+                <li>✅ <strong>Attendance Tracking</strong> – easy record keeping of daily attendance with automated
+                    reporting.</li>
+                <li>✅ <strong>Marks & Exams</strong> – enter marks, generate performance reports, and track student
+                    progress over time.</li>
+                <li>✅ <strong>Document Upload</strong> – store student-related documents (certificates, ID proofs,
+                    forms) securely.</li>
+                <li>✅ <strong>Teacher Management</strong> – assign teachers to classes, monitor workloads, and manage
+                    schedules.</li>
+                <li>✅ <strong>Fees & Payments</strong> – manage student fee records, track pending payments, and
+                    generate receipts.</li>
+                <li>✅ <strong>Classroom Dashboard</strong> – simple overview of students, teachers, and academic
+                    activity per class.</li>
+                <li>✅ <strong>Reports & Analytics</strong> – generate summary reports for student performance,
+                    attendance trends, and finances.</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="card">
+            <h2>Screenshots</h2>
+
+            <div class="screenshot-card">
+                <h3>Secure Login & Authentication</h3>
+                <img src="/images/school-management/login.png"
+                    alt="Screenshot of secure login page with authentication">
+                <p>
+                    The system includes a secure login view to ensure that only authorized users
+                    (students, teachers, and admins) can access their profiles.
+                    Authentication prevents unauthorized access and protects sensitive school data.
+                </p>
+            </div>
+
+
+            <div class="screenshot-card">
+                <h3>Student Profile</h3>
+                <img src="/images/school-management/student-detail.png"
+                    alt="Upload screenshot of student dashboard showing profile and activities">
+                <p>A complete student profile with attendance, marks, and uploaded documents in one central place.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Attendance Management</h3>
+                <img src="/images/school-management/attendance.png" alt="Upload screenshot of attendance tracking page">
+                <p>Simple interface for teachers to mark daily attendance and generate class-wise reports.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Document Upload</h3>
+                <img src="/images/school-management/documents.png"
+                    alt="Upload screenshot showing student document upload page">
+                <p>Upload and manage important student-related documents for secure digital record keeping.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Teacher Dashboard</h3>
+                <img src="/images/school-management/dashboard.png"
+                    alt="Upload screenshot showing teacher profile and assigned classes">
+                <p>
+                    Teacher view where staff can check today’s timetable, student and staff attendance, and notices from
+                    management.
+                </p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Smart Timetable Management</h3>
+                <img src="/images/school-management/complete-time-table.png"
+                    alt="Screenshot of timetable creation and management">
+                <p>
+                    The system makes it easy to create and manage class timetables.
+                    It automatically checks teacher availability and assigns classes to free teachers,
+                    ensuring there are no conflicts and saving time in manual scheduling.
+                </p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Class & Year-wise Subject Details</h3>
+                <img src="/images/school-management/all-subjects.png"
+                    alt="Screenshot showing subject details by class and year in student profile">
+                <p>
+                    The system allows schools to track subject details according to each class and academic year.
+                    If a student continues in the same school for multiple years, all subject information across their
+                    entire academic journey
+                    can be accessed with a single click, directly from the student’s profile page.
+                    This ensures complete academic history management in one place.
+                </p>
+            </div>
+
+
+
+            <div class="screenshot-card">
+                <h3>School Management System Project</h3>
+                <p>
+                    Our School Management System was successfully developed and capable of running smoothly.
+                    Working on this project helped us gain valuable insights into large databases and complex mapping.
+                </p>
+                <p>
+                    However, despite its functionality, the project had to be stopped due to low adoption.
+                    Most users preferred traditional paper-based methods and manual boards over an online portal.
+                    Conflicts and differing priorities also made it difficult to continue the project long-term.
+                </p>
+                <p>
+                    The system once ran successfully and demonstrated our capability to handle large-scale educational
+                    software projects.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+            <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Guru Sevak Singh. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

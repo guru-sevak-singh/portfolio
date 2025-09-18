@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan2Food - Project Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            color: #ffdd57;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #bbb;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffdd57;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #ffdd57;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        .features ul {
+            margin-left: 1.2rem;
+        }
+
+        .features li {
+            margin-bottom: 0.6rem;
+            color: #ddd;
+        }
+
+        .screenshot-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .screenshot-card h3 {
+            color: #ffdd57;
+            margin-bottom: 1rem;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #222;
+            object-fit: cover;
+        }
+
+        .screenshot-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background: #ffdd57;
+            color: #111;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #111;
+            color: #777;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Scan2Food</h1>
+        <p>Theatre Food Management App – Fast, Smooth, and Loved by Users</p>
+    </header>
+
+    <section>
+        <!-- Overview -->
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                <strong>Scan2Food</strong> is a modern web application designed to revolutionize food ordering in
+                theatres.
+                Customers can order snacks and beverages directly from their seats, while theatre staff and
+                administrators manage orders efficiently.
+                The app leverages <strong>WebSockets</strong> for live order updates, <strong>SSE</strong> for smooth
+                data streaming, and multiple micro-apps for theatre, staff, admin, and customer management.
+                Integration with WhatsApp API ensures instant notifications for orders, refunds, and customer support.
+                Scan2Food has quickly gained popularity and carved its own place in the market by enhancing the theatre
+                experience.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="card features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>✅ <strong>Seat-side Ordering</strong> – customers can place orders directly from their seats.</li>
+                <li>✅ <strong>Extended Intermission Time</strong> – extends intermission by 15-20 minutes to ensure
+                    smooth order delivery.</li>
+                <li>✅ <strong>Multiple Payment Gateways</strong> – failover ready if any gateway goes down, ensuring
+                    uninterrupted payments.</li>
+                <li>✅ <strong>Payment Aggregation</strong> – automatic split between theatre owner and our platform for
+                    easier taxation and transactions.</li>
+                <li>✅ <strong>Live Orders with WebSocket</strong> – real-time updates for staff and customers.</li>
+                <li>✅ <strong>High-efficiency Data Streaming with SSE</strong> – smooth performance without heavy server
+                    load.</li>
+                <li>✅ <strong>Micro-app Architecture</strong> – separate apps for theatre, staff, admin, and chat
+                    integration with WhatsApp API.</li>
+                <li>✅ <strong>WhatsApp Integration</strong> – customers receive notifications for orders and refunds,
+                    and can contact support directly via WhatsApp.</li>
+            </ul>
+        </div>
+
+        <!-- Skills & Technologies -->
+        <div class="card">
+            <h2>Technologies & Skills Used</h2>
+            <ul>
+                <li>🌐 <strong>WebSockets</strong> – for real-time order tracking.</li>
+                <li>💡 <strong>Server-Sent Events (SSE)</strong> – smooth live updates with minimal server load.</li>
+                <li>🧩 <strong>Micro-app Architecture</strong> – modular apps for theatre management, staff management,
+                    customer interface, and admin dashboard.</li>
+                <li>💳 <strong>Multiple Payment Gateway Integration</strong> – ensures reliability and flexibility.</li>
+                <li>📲 <strong>WhatsApp API Integration</strong> – notifications for orders, refunds, and direct
+                    communication.</li>
+                <li>⚡ <strong>Responsive Web Design</strong> – works perfectly across devices and screens.</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="card">
+            <h2>Screenshots</h2>
+            <div class="screenshot-card">
+                <h3>Scan2Food Theatre Login</h3>
+                <img src="/images/scan2food/scan2food-login.png"
+                    alt="Screenshot of Scan2Food theatre login page">
+                <p>
+                    The system provides a secure login page for theatre staff and management.
+                    Only authorized theatre users can log in to manage live food orders, track payments,
+                    view customer interactions, and handle staff operations.
+                    This ensures that sensitive data and theatre operations remain protected.
+                </p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Customer Order Interface</h3>
+                <img src="/images/scan2food/menu.png" alt="Screenshot of customer seat-side ordering page">
+                <p>Easy interface for customers to browse menu and place orders from their seats.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Live Order Tracking</h3>
+                <img src="/images/scan2food/all-seats.png"
+                    alt="Screenshot showing live order updates for theatre staff">
+                <p>Real-time order updates for theatre staff using WebSocket technology.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Payment Management</h3>
+                <img src="/images/scan2food/payment-gateway.png"
+                    alt="Screenshot of multiple payment gateway and aggregation dashboard">
+                <p>Manage multiple payment gateways with automated profit and theatre owner split.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Admin Dashboard</h3>
+                <img src="/images/scan2food/admin-dashboard.png"
+                    alt="Screenshot showing admin management of theatres and staff">
+                <p>Monitor orders, theatre performance, and staff activities from a unified dashboard.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>WhatsApp Notifications</h3>
+                <img src="/images/scan2food/chat-app.png"
+                    alt="Screenshot showing WhatsApp notifications for customers and staff">
+                <p>Automatic notifications for order confirmation, delivery, and refunds via WhatsApp.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Project Overview & Demo</h3>
+                <div style="padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 8px; margin-bottom: 1rem;">
+                    <p style="color: #ccc; margin-bottom: 0.5rem;">
+                        <strong>Scan2Food</strong> is a theatre food management app that allows customers to order
+                        snacks directly from their seats, track live orders, and receive notifications via WhatsApp.
+                        The app integrates multiple payment gateways and ensures smooth operation with WebSocket and SSE
+                        technology.
+                    </p>
+                    <p style="color:#ffdd57; margin-bottom:0.5rem;">
+                        Website: <a href="https://www.scan2food.com" target="_blank"
+                            style="color:#ffdd57; text-decoration:underline;">www.scan2food.com</a>
+                    </p>
+                    <div style="text-align:start;">
+                        <a href="https://www.youtube.com/embed/WaYx5jso3tU" target="_blank" class="back-btn"
+                            style="margin-top:0;">
+                            ▶ Watch Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+            <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Guru Sevak Singh. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

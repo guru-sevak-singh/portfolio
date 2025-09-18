@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheOpenTable - Project Detail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            color: #ffdd57;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #bbb;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffdd57;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #ffdd57;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        .features ul {
+            margin-left: 1.2rem;
+        }
+
+        .features li {
+            margin-bottom: 0.6rem;
+            color: #ddd;
+        }
+
+        .screenshot-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .screenshot-card h3 {
+            color: #ffdd57;
+            margin-bottom: 1rem;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #222;
+            object-fit: cover;
+        }
+
+        .screenshot-card p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background: #ffdd57;
+            color: #111;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #111;
+            color: #777;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TheOpenTable</h1>
+        <p>Smart Restaurant & Theatre Food Ordering Platform</p>
+    </header>
+
+    <section>
+        <!-- Overview -->
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                <strong>TheOpenTable</strong> is a web application designed to simplify restaurant and theatre order
+                management.
+                It provides an end-to-end solution for taking online and in-seat orders, monitoring sales, and tracking
+                delivery status.
+                Customers can place orders directly from their seats using QR codes or even opt for home delivery.
+                On the other side, restaurant staff get a clean dashboard to manage tables, monitor payment status, and
+                track order progress in real-time.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="card features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>✅ <strong>Multi-bank account support</strong> – each theatre or outlet can connect its own bank
+                    account rather than sharing a single payment gateway.</li>
+                <li>✅ <strong>Order tracking</strong> – real-time updates for pending, in-progress, and completed
+                    orders.</li>
+                <li>✅ <strong>QR-based ordering</strong> – customers can scan a QR at their seat/table to order food or
+                    request home delivery.</li>
+                <li>✅ <strong>Table status management</strong> – see whether a table is vacant, awaiting delivery, or
+                    has pending payments at a glance.</li>
+                <li>✅ <strong>Simple dashboard</strong> – intuitive layout for staff to view all tables, orders, and
+                    payments clearly.</li>
+                <li>✅ <strong>Order profiles</strong> – track individual orders with details about items, amount, and
+                    customer.</li>
+                <li>✅ <strong>Payment tracking</strong> – see all payments received and pending in one place.</li>
+                <li>✅ <strong>Delivery module</strong> – customers provide their details (name, address, phone) for home
+                    delivery orders, ensuring smooth communication.</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="card">
+            <h2>Screenshots</h2>
+
+            <div class="screenshot-card">
+                <h3>Restaurant Secure Login</h3>
+                <img src="/images/theopentable/opentable-login.png"
+                    alt="Screenshot of restaurant login page for secure access">
+                <p>
+                    A secure login system ensures that only registered restaurants can access their dashboard.
+                    After logging in, restaurant owners and staff can manage their menu, process orders,
+                    track payments, and view reports.
+                    This authentication step protects sensitive restaurant data and prevents unauthorized access.
+                </p>
+            </div>
+
+
+            <div class="screenshot-card">
+                <h3>Restaurant Dashboard</h3>
+                <img src="/images/theopentable/dashboard.png"
+                    alt="Upload screenshot of restaurant dashboard showing orders and sales overview">
+                <p>A centralized dashboard showing all tables, active orders, and sales performance in real time.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Table Status View</h3>
+                <img src="/images/theopentable/table-view.png"
+                    alt="Upload screenshot showing table status: vacant, pending delivery, payment done/pending">
+                <p>Each table has its own status – whether it’s vacant, has an order pending, or payment awaiting
+                    confirmation.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>QR Ordering</h3>
+                <img src="/images/theopentable/scaning-detail.png"
+                    alt="Upload screenshot showing QR-based ordering system for theatre seats">
+                <p>Customers scan QR codes at their seats to place food orders without waiting for staff, improving
+                    service speed and convenience.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Order Profile</h3>
+                <img src="/images/theopentable/order-profile.png"
+                    alt="Upload screenshot showing details of a specific order">
+                <p>Detailed order view including customer details, ordered items, amount, and order status.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Payments Overview</h3>
+                <img src="/images/theopentable/gateway.png"
+                    alt="Upload screenshot showing payment list of all completed and pending transactions">
+                <p>Comprehensive payment tracking page to monitor all received and pending payments across tables and
+                    orders.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Delivery Module</h3>
+                <img src="/images/theopentable/delivery.png"
+                    alt="Upload screenshot showing delivery page with fields for name, address, and phone">
+                <p>For home delivery orders, customers fill in their name, address, and phone number to ensure smooth
+                    delivery and contact.</p>
+            </div>
+
+            <div class="screenshot-card">
+                <h3>Restaurant Management System Project</h3>
+                <p>
+                    The Restaurant Management System was an innovative project designed to streamline operations and
+                    improve efficiency.
+                    It had a strong concept and promising features that could benefit restaurants of all sizes.
+                </p>
+                <p>
+                    Despite its potential, the project faced tough competition from established players in the market.
+                    Most local users were already accustomed to existing products, which made adoption slow.
+                </p>
+                <p>
+                    After giving it time and effort, we decided to conclude the project.
+                    The experience, however, provided valuable lessons in market dynamics, product positioning, and user
+                    preferences.
+                    The project’s website has now been closed, but the insights gained will guide our future endeavors.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+            <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Guru Sevak Singh. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

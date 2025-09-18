@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAN Card Verification Software - Project Detail</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      color: #ffdd57;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #bbb;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffdd57;
+      text-align: center;
+    }
+
+    section h3 {
+      color: #ffdd57;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .features ul {
+      margin-left: 1.2rem;
+    }
+
+    .features li {
+      margin-bottom: 0.6rem;
+      color: #ddd;
+    }
+
+    .screenshot-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .screenshot-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .screenshot-card h3 {
+      color: #ffdd57;
+      margin-bottom: 1rem;
+    }
+
+    .screenshot-card img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background: #222;
+      object-fit: cover;
+    }
+
+    .screenshot-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #ffdd57;
+      color: #111;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #111;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    .video-link {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 8px 14px;
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .video-link:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>PAN Card Verification Software</h1>
+    <p>Bulk PAN Verification with Automation</p>
+  </header>
+
+  <section>
+    <!-- Overview -->
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        The <strong>PAN Card Verification Software</strong> is a powerful automation solution designed for companies and
+        professionals who need to verify PAN cards in bulk.
+        Instead of manually verifying each PAN card on the TRACES government portal (which only supports one PAN at a
+        time), this software streamlines the process by accepting an Excel file upload and automatically verifying each
+        PAN one by one.
+        With captcha automation, real-time monitoring, and a clean dashboard, it saves countless hours of manual work
+        while maintaining accuracy and compliance.
+      </p>
+    </div>
+
+    <!-- Features -->
+    <div class="card features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>✅ Upload an Excel file containing multiple PAN numbers for bulk verification.</li>
+        <li>✅ Automatically fills captchas using smart automation techniques.</li>
+        <li>✅ Works seamlessly with the official TRACES portal, verifying PANs one by one in bulk.</li>
+        <li>✅ Integrated backoffice dashboard to monitor payments and usage statistics.</li>
+        <li>✅ Expiry and license control system, so clients/companies can monitor their validity.</li>
+        <li>✅ Supports <strong>five flexible payment plans</strong> for businesses of different sizes.</li>
+        <li>✅ Clean dashboard for both admins and users to track activity and results in real-time.</li>
+      </ul>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="card">
+      <h2>Screenshots</h2>
+
+      <div class="screenshot-card">
+        <h3>Login</h3>
+        <img src="/images/pancard/login.jpeg"
+          alt="Upload screenshot of the user dashboard showing PAN verification statistics">
+        <p>User Have to enter the login Id, Passsword and Tan number which require for the Traces Portal.</p>
+      </div>
+
+      <div class="screenshot-card">
+        <h3>Upload Excel File</h3>
+        <img src="/images/pancard/excel.jpeg"
+          alt="Upload screenshot showing Excel file upload feature for bulk PAN verification">
+        <p>Users can upload an Excel file containing PAN numbers. The system automatically processes each PAN for
+          verification.</p>
+      </div>
+
+      <div class="screenshot-card">
+        <h3>Captcha Automation</h3>
+        <img src="/images/pancard/captcha.jpeg"
+          alt="Upload screenshot showing captcha automation during PAN verification">
+        <p>Smart captcha handling automates the verification process while ensuring compliance with the government
+          portal.</p>
+      </div>
+
+      <div class="screenshot-card">
+        <h3>Verification Progress</h3>
+        <img src="/images/pancard/selenium.jpeg" alt="Upload screenshot showing verification progress of PAN cards">
+        <p>A progress tracker shows how many PANs have been verified, pending, or failed — making bulk verification
+          transparent and reliable.</p>
+      </div>
+
+      <div class="screenshot-card">
+        <h3>Admin Backoffice</h3>
+        <img src="/images/pancard/admin-dashboard.png"
+          alt="Upload screenshot showing admin backoffice with usage tracking and payment monitoring">
+        <p>Admins can manage payment plans, monitor usage, and control account expiry from the integrated backoffice
+          system.</p>
+      </div>
+
+      <div class="screenshot-card">
+        <h3>PAN Card Verify Software Status</h3>
+        <p>
+          The PAN Card Verify Software is running smoothly without any issues.
+          It automates many repetitive and boring tasks, making work faster and more efficient.
+        </p>
+        <p>
+          Currently, approximately 200–300 users are actively using this software, and feedback has been very positive.
+          Users appreciate how it simplifies processes and saves time.
+        </p>
+        <p style="color:#ffdd57; margin-bottom:0.5rem;">
+          Website: <a href="https://www.pancardverify.in" target="_blank"
+            style="color:#ffdd57; text-decoration:underline;">www.pancardverify.in</a>
+        </p>
+        <div style="text-align:start;">
+          <a href="https://youtu.be/IJtudeqHXno" target="_blank" class="back-btn" style="margin-top:0;">
+            🎥 Watch Demo
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Guru Sevak Singh. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

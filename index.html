@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Sevak Singh - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #111;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #ffdd57;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #ffdd57;
+        }
+
+        section h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #ffdd57;
+            display: block;
+            margin: 0.5rem auto 0;
+            border-radius: 3px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #222;
+            /* placeholder bg */
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex: 1;
+        }
+
+        .card-content h3 {
+            color: #ffdd57;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .skill {
+            background: #222;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #ffdd57;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            color: #777;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width:600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guru Sevak Singh</h1>
+        <p>Full-Stack Developer | Python | Django | Flask | JavaScript</p>
+        <nav>
+            <a href="#summary">Summary</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <div class="card">
+            <div class="card-content">
+                <p>
+                    Self-taught and highly motivated software developer with hands-on experience in building full-stack
+                    web applications, automation tools, and SaaS products.
+                    Skilled in Django, Flask, Python, JavaScript, deployment, and PostgreSQL. Strong problem-solving
+                    abilities with proven experience in delivering custom software solutions for businesses.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <span class="skill">Django</span>
+            <span class="skill">Flask</span>
+            <span class="skill">Python</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React (Basic)</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Selenium</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">Payment Gateway Integration</span>
+            <span class="skill">WhatsApp Web API</span>
+            <span class="skill">DigitalOcean Deployment</span>
+            <span class="skill">WebSockets & SSE</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects & Experience</h2>
+        <div class="card-grid">
+            <a class="card" href="/dop-software.html">
+                <img src="/images/dopagentsoftware/dop.png" alt="DOP Agent Software">
+                <div class="card-content">
+                    <h3>DOP Agent Software (SaaS)</h3>
+                    <p>Selenium-based automation software integrated with dashboards to manage expiry and usage data
+                        with a clean UI.</p>
+                </div>
+            </a>
+            <a class="card" href="/pancardverifysoftware.html">
+                <img src="/images/pancard/pancard.png" alt="Autopanverify Software">
+                <div class="card-content">
+                    <h3>Autopanverify Software</h3>
+                    <p>Selenium automation software for PAN card verification via TRACES portal with a management
+                        dashboard.</p>
+                </div>
+            </a>
+            <a class="card" href="school-management.html">
+                <img src="/images/school-management/dashboard.png" alt="School Management Dashboard">
+                <div class="card-content">
+                    <h3>School Management Dashboard</h3>
+                    <p>Full-featured dashboard for students, teachers, fees, and attendance. Showcased strong full-stack
+                        capability.</p>
+                </div>
+            </a>
+            <a class="card" href="theopentable.html">
+                <img src="/images/theopentable/theopentable.png" alt="Restaurant App">
+                <div class="card-content">
+                    <h3>The Open Table</h3>
+                    <p>QR-based ordering system for dine-in and delivery customers. Demonstrated complete workflow
+                        design.</p>
+                </div>
+            </a>
+            <a class="card" href="scan2food.html">
+                <img src="/images/scan2food/scan2food.png" alt="Theatre App">
+                <div class="card-content">
+                    <h3>Theatre App (Scan2Food)</h3>
+                    <p>Seat-based ordering app with WhatsApp Web API integration, multi-gateway payments, and deployment
+                        for theatres.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card" style="text-align:center; padding:2rem;">
+            <p style="font-size:1.1rem; margin-bottom:1rem;">Let’s build something together 🚀</p>
+            <p style="margin:0.5rem 0;">
+                📧 <a href="mailto:gurusevaks85@gmail.com"
+                    style="color:#ffdd57; text-decoration:none;">gurusevaks85@gmail.com</a>
+            </p>
+            <p style="margin:0.5rem 0;">
+                📱 <a href="tel:+917206662805" style="color:#ffdd57; text-decoration:none;">+91-7206662805</a>
+            </p>
+            <p style="margin:0.5rem 0;">
+                💻 <a href="https://github.com/guru-sevak-singh/" target="_blank"
+                    style="color:#ffdd57; text-decoration:none;">github.com/guru-sevak-singh</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Guru Sevak Singh. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll("nav a").forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+
+</html>
